@@ -1,46 +1,130 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <h3 align="center">React Hooks</h3>
 
-## Available Scripts
+  <p align="center">
+  This is a currency converter app, which users can search for countries and enter an amount in SEK to be converted into local currencies of selected countries. This project was made using open APIs with free licenses.
+  </p>
+</div>
 
-In the project directory, you can run:
+<!-- ABOUT THE PROJECT -->
 
-### `npm start`
+## About The Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Tutorial Intro Image](https://cdn-images-1.medium.com/max/1600/1*az9gptU5uQ4RmpKO2Oox4A.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project contains two parts. First we have a backend GraphQL server made with Node.js and secondly we have a frontend made with React.js. Main usage of the app is that you can convert the amount in SEK to local currency.
 
-### `npm test`
+### Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is built using the following technologies.
 
-### `npm run build`
+- [Node.js](https://nodejs.org/en/)
+- [Express.js](https://expressjs.com)
+- [React.js](https://reactjs.org/)
+- [GraphQL](https://graphql.org/)
+- [Ant Design](https://ant.design/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- GETTING STARTED -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Use following instructions to run the project. Please make sure to have prerequisites before installation.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This app requires a node js environment to run, therefore we need to have node js installed in our environment.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Clone the git repo
+   ```sh
+   git clone https://github.com/shehan96/currency-converter.git
+   ```
 
-## Learn More
+- Backend installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate inside to the server folder
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   cd server
+   ```
+
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Run the backend
+   ```sh
+   npm start
+   ```
+
+- Frontend installation
+
+5. Navigate inside to the client folder
+   ```sh
+   cd server
+   ```
+6. Install NPM packages
+   ```sh
+   npm install
+   ```
+7. Run the frontend
+   ```sh
+   npm start
+   ```
+
+- Visit http://localhost:5000/graphql to access the backend server
+- Visit http://localhost:3000 to access the frontend client
+
+## User Credentials
+
+In this project, the backend does not store any data related to the user. Therefore hardcoded email and password is used as user credentials and used for authentication.
+
+Please use following user credentials to generate a JWT token.
+
+- Email : test@gmail.com
+- Password : test123
+
+<!-- ROADMAP & TASK TIME BREAKDOWN -->
+
+## Roadmap & Task Time Breakdown
+
+- [x] Backend Server
+  - [x] Project setup & structure planning - 1Hr
+  - [x] TypeDefs, Queries & Mutations - 3Hr
+  - [x] Authentication Middleware - 1Hr
+  - [x] Rate limiter setup - 0.5Hr
+  - [x] Testing & Finishing - 1Hr
+- [x] Frontend Client
+  - [x] Project setup & structure planning - 1Hr
+  - [x] Home & Login Page Setup - 3Hr
+  - [x] Components Creating - 3Hr
+  - [x] GraphQL Client Setup - 1Hr
+  - [x] Custom Hooks Creating - 1Hr
+  - [x] Styling & Testing - 1Hr
+
+<!-- Future Improvements & Implementations-->
+
+## Future Improvements & Implementations
+
+Here I have mentioned some future improvements & implementations which I think makes this app a better one.
+
+- Make improvements for the authentication system by saving user related data in a database without using hardcoded user credentials.
+- Allow users to access most popular countries without having a token. Users can use the system up to some limit without authenticating.
+- Add error handling functions with more user friendly messages and data.
+- Add a function to check exchange rate in real time or add a function to clear data if fetched data is much older.
+- Add a function to remove fetched country data from the frontend, if the user wants to.
+
+<!-- DEVELOPER -->
+
+## Developer & Project Link
+
+Developer Name : Shehan Abeyrathne
+
+Project Link : [https://github.com/shehan96/currency-converter](https://github.com/shehan96/currency-converter)
