@@ -1,9 +1,10 @@
 import './App.css';
 import { Parent } from './useCallBack/Parent';
+import { StateSample } from './useState/StateSample';
 
 function App() {
   return (
-    <Parent />
+    <StateSample />
   );
 }
 
