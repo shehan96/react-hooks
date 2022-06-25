@@ -1,10 +1,18 @@
 import './App.css';
-import { Parent } from './useCallBack/Parent';
-import { StateSample } from './useState/StateSample';
+import { FetchApi } from './fetch/FetchApi';
+import { ChildA } from './useContext/ChildA';
+import { ChildB } from './useContext/ChildB';
+import { UserContextProvider } from './useContext/UserContextProvider';
 
 function App() {
   return (
-    <StateSample />
+    <>
+      <UserContextProvider test='ddd'>
+        <ChildA />
+        <ChildB />
+      </UserContextProvider>
+      <FetchApi />
+    </>
   );
 }
 
