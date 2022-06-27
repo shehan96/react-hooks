@@ -1,17 +1,16 @@
 import './App.css';
-import { FetchApi } from './fetch/FetchApi';
-import { ChildA } from './useContext/ChildA';
-import { ChildB } from './useContext/ChildB';
-import { UserContextProvider } from './useContext/UserContextProvider';
+import MemoSample from './MemoSample';
+import { Parent }  from './UseCallBack/Parent';
+import { UseReducer } from './UseReducer';
+import { StateSample } from './useState/StateSample';
 
 function App() {
   return (
     <>
-      <UserContextProvider test='ddd'>
-        <ChildA />
-        <ChildB />
-      </UserContextProvider>
-      <FetchApi />
+      {/* <StateSample /> */}
+      {/* <MemoSample /> */}
+      <Parent />
+      {/* <UseReducer /> */}
     </>
   );
 }
