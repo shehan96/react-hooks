@@ -1,24 +1,31 @@
 import { useCallback, useState } from 'react';
-import { ChildA } from './ChildA';
-import { ChildB } from './ChildB';
+import Button from './Button';
+import Count from './Count';
+import { Title } from './Title';
 
 export const Parent = () => {
-  const [test, setTest] = useState(0);
-  const [childACount, setChildACount] = useState(0);
+  let name = 'Parent';
+  console.log(`Render ${name}`);
 
-  const handleChildACount = useCallback(() => {
-    setChildACount((childACount) => childACount + 1);
-  }, [childACount]);
+  const [age, setAge] = useState(0);
+  const [salary, setSalary] = useState(10000);
 
-  console.log('Render Parent');
+  const incrementAge = () => {
+    setAge((currentAge) => currentAge + 1);
+  };
+
+  // new increment salary function will create for each parent component re-render
+  const incrementSalary = useCallback(() => {
+    setSalary((currentSalary) => currentSalary + 500);
+  }, [salary]);
 
   return (
     <>
-      <p>Child A Count Display in Parent : {childACount}</p>
-      <p>Parent test {test}</p>
-      <ChildA childAOnClick={handleChildACount} />
-      <ChildB />
-      <button onClick={() => setTest((test) => test + 1)}>Parent Button</button>
+      <Title />
+      <Count text='Age' count={age} />
+      <Button text='Age' click={incrementAge} />
+      <Count text='Salary' count={salary} />
+      <Button text='Salary' click={incrementSalary} />
     </>
   );
 };
