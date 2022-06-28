@@ -2,9 +2,11 @@ import { AnimeTitle } from './Anime';
 import './App.css';
 import { ArrayFun } from './ArrayFun';
 import MemoSample from './MemoSample';
-import { Parent }  from './UseCallBack/Parent';
+import { TodoApp } from './TodoApp';
+// import { Parent }  from './UseCallBack/Parent';
 import { UseReducer } from './UseReducer';
 import { StateSample } from './useState/StateSample';
+import { Parent } from './ReactMemo';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
       {/* <Parent /> */}
       {/* <UseReducer /> */}
       {/* <ArrayFun /> */}
-      <AnimeTitle />
+      {/* <AnimeTitle /> */}
+      {/* <TodoApp /> */}
+      <Parent />
     </>
   );
 }
