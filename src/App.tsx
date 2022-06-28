@@ -1,3 +1,4 @@
+import { AnimeTitle } from './Anime';
 import './App.css';
 import { ArrayFun } from './ArrayFun';
 import MemoSample from './MemoSample';
@@ -8,11 +9,12 @@ import { StateSample } from './useState/StateSample';
 function App() {
   return (
     <>
-      <StateSample />
+      {/* <StateSample /> */}
       {/* <MemoSample /> */}
       {/* <Parent /> */}
       {/* <UseReducer /> */}
       {/* <ArrayFun /> */}
+      <AnimeTitle />
     </>
   );
 }
