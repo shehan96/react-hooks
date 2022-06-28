@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { MouseEventHandler, useEffect, useState } from 'react';
 import './anime.css';
 import { Complete } from './Complete';
 
@@ -30,6 +30,18 @@ const AnimeTitle = () => {
       });
   }, []);
 
+  const handleChangeStatus = (todo: TodoType) => {
+    setTodos(todos.map(t => {
+      if(t.id === todo.id){
+        return {
+          ...t,
+          completed: !todo.completed
+        }
+      }
+      return t;
+    }));
+  };
+
   return (
     <>
       <div className='container'>
@@ -38,6 +50,7 @@ const AnimeTitle = () => {
             <h4 className='anime'>{todo.title}</h4>
             <p className='character'>{todo.userId}</p>
             <Complete completed={todo.completed} />
+            <button onClick={() => handleChangeStatus(todo)}>Change Status</button>
           </div>
         ))}
       </div>
