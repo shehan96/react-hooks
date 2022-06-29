@@ -9,6 +9,8 @@ import { StateSample } from './useState/StateSample';
 import { Parent } from './ReactMemo';
 import { Debounce } from './Debounce';
 import { CssTests } from './CssTests';
+import { ComA } from './HOC/ComA';
+import { Promises } from './Promises/Promises';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
       {/* <TodoApp /> */}
       {/* <Parent /> */}
       {/* <Debounce /> */}
-      <CssTests />
+      {/* <CssTests /> */}
+      {/* <ComA age={10}/> */}
+      <Promises />
     </>
   );
 }
