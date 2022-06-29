@@ -7,6 +7,8 @@ import { TodoApp } from './TodoApp';
 import { UseReducer } from './UseReducer';
 import { StateSample } from './useState/StateSample';
 import { Parent } from './ReactMemo';
+import { Debounce } from './Debounce';
+import { CssTests } from './CssTests';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
       {/* <ArrayFun /> */}
       {/* <AnimeTitle /> */}
       {/* <TodoApp /> */}
-      <Parent />
+      {/* <Parent /> */}
+      {/* <Debounce /> */}
+      <CssTests />
     </>
   );
 }
