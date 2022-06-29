@@ -13,4 +13,13 @@ export const SampleCodes = () => {
   /**
       setNames([...names, newName]);
      */
+  // update existing state object
+  /**
+   type of object is
+   object {
+    firstName : string;
+    lastName : string;
+   }
+   setObjects({...object, firstName : 'shehan'})
+   */
 };
