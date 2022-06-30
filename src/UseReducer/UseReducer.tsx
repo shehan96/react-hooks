@@ -5,7 +5,7 @@ type Action = {
   payload: number;
 };
 
-const reducer = (state: number, action : any) => {
+const reducer = (state: number, action : Action) => {
   switch (action.type) {
     case 'increase':
       return state + 1;
