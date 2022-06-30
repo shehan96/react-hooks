@@ -11,6 +11,7 @@ import { Debounce } from './Debounce';
 import { CssTests } from './CssTests';
 import { ComA } from './HOC/ComA';
 import { Promises } from './Promises/Promises';
+import { Hoisting } from './Hoisting/Hoisting';
 
 function App() {
   return (
@@ -26,7 +27,8 @@ function App() {
       {/* <Debounce /> */}
       {/* <CssTests /> */}
       {/* <ComA age={10}/> */}
-      <Promises />
+      {/* <Promises /> */}
+      <Hoisting />
     </>
   );
 }
