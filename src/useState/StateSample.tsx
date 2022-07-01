@@ -27,8 +27,8 @@ export const StateSample = () => {
       <span>Count : {count}</span>
       <button onClick={handleIncreaseCount}>Increase count</button>
       <br />
-      <p>First Name : {name.firstName}</p>
-      <p>Last Name : {name.lastName}</p>
+      <p>First : {name.firstName}</p>
+      <p>Last : {name.lastName}</p>
       <form>
         <input type='text' value={name.firstName} onChange={(e) => setName({ ...name, firstName: e.target.value })} />
         <input type='text' value={name.lastName} onChange={(e) => setName({ ...name, lastName: e.target.value })} />
