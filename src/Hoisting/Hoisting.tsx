@@ -13,4 +13,5 @@ export const Hoisting = () => {
 
 const fun = (value: string) => {
   console.log(`Parameter ${value}`);
+  console.log(`Parameter ${value}`);
 };
