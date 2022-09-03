@@ -50,6 +50,7 @@ const AnimeTitle = () => {
             <h4 className='anime'>{todo.title}</h4>
             <p className='character'>{todo.userId}</p>
             <Complete completed={todo.completed} />
+            {/** change status */}
             <button onClick={() => handleChangeStatus(todo)}>Change Status</button>
           </div>
         ))}
