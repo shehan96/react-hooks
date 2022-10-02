@@ -59,6 +59,7 @@ const CssTests = () => {
             <div className='container-item'>
               <DogBox image={duck?.message} />
               <DogBox image={duck?.message} />
+              <DogBox image={duck?.message} />
             </div>
           );
         })}
